@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class RataRataBuffered {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Masukkan nilai ujian 1: ");
+        double n1 = Double.parseDouble(br.readLine());
+
+        System.out.print("Masukkan nilai ujian 2: ");
+        double n2 = Double.parseDouble(br.readLine());
+
+        System.out.print("Masukkan nilai ujian 3: ");
+        double n3 = Double.parseDouble(br.readLine());
+
+        double rata = (n1 + n2 + n3) / 3;
+
+        System.out.println("Rata-rata nilai: " + rata);
+
+        if (rata >= 60) {
+            System.out.println(":-)");
+        } else {
+            System.out.println(":(");
+        }
+    }
+}
