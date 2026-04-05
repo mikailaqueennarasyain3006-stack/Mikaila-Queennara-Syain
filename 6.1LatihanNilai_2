@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class RataRataJOption {
+    public static void main(String[] args) {
+        double n1 = Double.parseDouble(JOptionPane.showInputDialog("Masukkan nilai ujian 1:"));
+        double n2 = Double.parseDouble(JOptionPane.showInputDialog("Masukkan nilai ujian 2:"));
+        double n3 = Double.parseDouble(JOptionPane.showInputDialog("Masukkan nilai ujian 3:"));
+
+        double rata = (n1 + n2 + n3) / 3;
+
+        String hasil = "Rata-rata nilai: " + rata;
+
+        if (rata >= 60) {
+            hasil += "\n:-)";
+        } else {
+            hasil += "\n:(";
+        }
+
+        JOptionPane.showMessageDialog(null, hasil);
+    }
+}
